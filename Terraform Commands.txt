@@ -11,3 +11,8 @@ terraform state list (Gives a list of all the resources created)
 terraform state show aws_ebs_volume.example (shows details about that resource from the tfstate file)
 
 terraform state rm aws_ebs_volume.example  (Now terraform wont keep a track of this file. Now if you destroy, this resource wont be deleted)
+
+terraform.tfvars => the file where all the default variable values can be declared
+
+to change the default variable file
+terraform apply -var-file=c.tfvars
